@@ -1,11 +1,12 @@
-import type { CSSProperties, ReactNode, Ref } from 'react';
+import type { CSSProperties, ReactNode, Ref } from "react";
 
 export const DEFAULTS = {
-  colors: ['#7B3DFF', '#FF7AD9'] as [string, string],
-  backgroundColor: '#0A0A0A',
-  mode: 'auto' as 'auto' | 'glow' | 'ink',
-  charset: ' .,:;i!lI~+_-?][}{1)(|/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$',
-  fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+  colors: ["#7B3DFF", "#FF7AD9"] as [string, string],
+  backgroundColor: "#0A0A0A",
+  mode: "auto" as "auto" | "glow" | "ink",
+  charset: " .,:;i!lI~+_-?][}{1)(|/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$",
+  fontFamily:
+    'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
   glyphSize: 11,
   spacing: 1,
   height: 0.45,

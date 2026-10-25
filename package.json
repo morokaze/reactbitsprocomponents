@@ -1,44 +1,26 @@
 {
-  "name": "glyph-ember",
+  "name": "reactbitsprocomponents",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start",
-    "typecheck": "next typegen && tsc --noEmit"
-  },
-  "dependencies": {
-    "next": "16.4.2",
-    "react": "19.3.1",
-    "react-dom": "19.3.1",
-    "gsap": "3.15.0"
-  },
-  "devDependencies": {
-    "tailwindcss": "4.3.3",
-    "@tailwindcss/postcss": "4.3.3",
-    "typescript": "5.9.3",
-    "@types/node": "22.20.5",
-    "@types/react": "19.3.0",
-    "@types/react-dom": "19.3.0"
-  },
-  "description": "Анимированное ASCII-пламя для React с интерактивным демо",
+  "description": "Коллекция самостоятельно воссозданных анимированных React-компонентов",
   "license": "MIT",
   "engines": {
     "node": ">=22"
   },
-  "keywords": [
-    "react",
-    "canvas",
-    "ascii",
-    "animation",
-    "nextjs"
+  "workspaces": [
+    "components/*"
   ],
+  "scripts": {
+    "dev": "npm run dev:ember",
+    "dev:cloud": "npm run dev --workspace=cloud-atlas",
+    "dev:tide": "npm run dev --workspace=glyph-tide",
+    "dev:ember": "npm run dev --workspace=glyph-ember",
+    "build": "npm run build --workspaces",
+    "typecheck": "npm run typecheck --workspaces",
+    "start": "npm run start --workspace=glyph-ember"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/morokaze/reactbitsprocomponents.git"
-  },
-  "bugs": {
-    "url": "https://github.com/morokaze/reactbitsprocomponents/issues"
   }
 }

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+:root {
+  color-scheme: dark;
+  background: #0a0a0a;
+  color: #ededed;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+button,
+select,
+input {
+  font: inherit;
+}
+button,
+select,
+input[type="range"],
+input[type="color"] {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+}
+:focus-visible {
+  outline: 2px solid #a597d9;
+  outline-offset: 4px;
+}
+input[type="range"] {
+  appearance: none;
+  height: 4px;
+  border-radius: 8px;
+  background: #292929;
+  accent-color: #e9e9e9;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #efefef;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 50%;
+  background: #efefef;
+}
+input[type="color"] {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: 0;
+  border-radius: 50%;
+}
+.cloud-fallback {
+  background:
+    radial-gradient(ellipse at 20% 110%, #6d5bc080, transparent 65%),
+    radial-gradient(ellipse at 80% 120%, #3a2e7a, transparent 70%);
+}
