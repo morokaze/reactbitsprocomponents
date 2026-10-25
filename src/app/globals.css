@@ -1,0 +1,98 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #bd9bff;
+  outline-offset: 4px;
+}
+
+::selection {
+  background: #7b3dff;
+  color: #fff;
+}
+
+.tool-button {
+  padding: 8px 11px;
+  border: 1px solid #303030;
+  border-radius: 7px;
+  background: #101010;
+  color: #a3a3a3;
+  font-size: 12px;
+}
+
+.tool-button:hover {
+  background: #1b1b1b;
+  color: #fff;
+}
+
+.tool-button[aria-pressed='true'],
+.tool-button[aria-selected='true'] {
+  border-color: #484848;
+  background: #262626;
+  color: #fff;
+}
+
+.control-input {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #131313;
+  color: #ddd;
+  font-size: 12px;
+}
+
+input[type='range'] {
+  display: block;
+  width: 100%;
+  height: 20px;
+  accent-color: #a170ff;
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  accent-color: #a170ff;
+}
+
+input[type='color'] {
+  width: 27px;
+  height: 27px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+pre {
+  tab-size: 2;
+}
